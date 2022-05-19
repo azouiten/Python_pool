@@ -6,7 +6,9 @@
 
 Use the package manager pip to install foobar.
 
-> pip install my_minipack
+``` py
+ pip install my_minipack
+```
 
 ## Usage:
 
@@ -16,7 +18,8 @@ It's a function that allows you to create a progress bar, simple. You feed it an
 
 How to use my_minipack.ft_progress :
 
-``` import my_minipack
+```py
+ import my_minipack
  import time
  
  value = 0
@@ -32,7 +35,8 @@ How to use my_minipack.ft_progress :
 
 ### How to use **my_minipack.log** :
 
-``` import my_minipack
+```py
+ import my_minipack
  
  @my_minipack.log
  def some_function_1():
@@ -53,7 +57,8 @@ How to use my_minipack.ft_progress :
      ...
 ```
 The above code will result in a file named **actions.log** that contains something likes this:
-``` ...
+```
+ ...
  (azouiten)Running: Some Function 1     [ exec-time = 0.003 ms ]
  (azouiten)Running: Some Function 2     [ exec-time = 0.003 ms ]
  (azouiten)Running: Some Function 3     [ exec-time = 2.043 s ]
