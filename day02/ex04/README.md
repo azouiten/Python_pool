@@ -16,14 +16,14 @@ It's a function that allows you to create a progress bar, simple. You feed it an
 
 How to use my_minipack.ft_progress :
 
-> import my_minipack
-> import time
-> 
-> value = 0
-> for progress in my_minipack.ft_progress(range(1337)):
->     value += progress
->     time.sleep(0.005)
->     print(value)
+``` import my_minipack
+ import time
+ 
+ value = 0
+ for progress in my_minipack.ft_progress(range(1337)):
+     value += progress
+     time.sleep(0.005)
+     print(value)```
 
 ### What is **my_minipack.log** ?
 
