@@ -23,7 +23,8 @@ How to use my_minipack.ft_progress :
  for progress in my_minipack.ft_progress(range(1337)):
      value += progress
      time.sleep(0.005)
-     print(value)```
+     print(value)
+```
 
 ### What is **my_minipack.log** ?
 
@@ -31,33 +32,32 @@ How to use my_minipack.ft_progress :
 
 ### How to use **my_minipack.log** :
 
-> import my_minipack
-> 
-> @my_minipack.log
-> def some_function_1():
->     ...
-> 
-> @my_minipack.log
-> def some_function_2():
->     ...
-> 
-> @my_minipack.log
-> def some_function_3():
->     ...
-> 
-> if __name__ == "__main__":
->     some_function_1()
->     some_function_2()
->     some_function_3()
->     ...
-
+``` import my_minipack
+ 
+ @my_minipack.log
+ def some_function_1():
+     ...
+ 
+ @my_minipack.log
+ def some_function_2():
+     ...
+ 
+ @my_minipack.log
+ def some_function_3():
+     ...
+ 
+ if __name__ == "__main__":
+     some_function_1()
+     some_function_2()
+     some_function_3()
+     ...
+```
 The above code will result in a file named **actions.log** that contains something likes this:
-
-> ...
-> (azouiten)Running: Some Function 1     [ exec-time = 0.003 ms ]
-> (azouiten)Running: Some Function 2     [ exec-time = 0.003 ms ]
-> (azouiten)Running: Some Function 3     [ exec-time = 2.043 s ]
-> ...
-
+``` ...
+ (azouiten)Running: Some Function 1     [ exec-time = 0.003 ms ]
+ (azouiten)Running: Some Function 2     [ exec-time = 0.003 ms ]
+ (azouiten)Running: Some Function 3     [ exec-time = 2.043 s ]
+ ...
+```
 ## License
 This package is licensed under **the GNU General Public License v3 GPLv3**
